@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             label2 = new Label();
-            listView1 = new ListView();
+            lvAracListesi = new ListView();
             btnOlustur = new Button();
             cmbGunSayisi = new ComboBox();
             cmbAraclar = new ComboBox();
@@ -56,13 +56,13 @@
             label2.TabIndex = 0;
             label2.Text = "Gün";
             // 
-            // listView1
+            // lvAracListesi
             // 
-            listView1.Location = new Point(5, 185);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(582, 121);
-            listView1.TabIndex = 2;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lvAracListesi.Location = new Point(5, 185);
+            lvAracListesi.Name = "lvAracListesi";
+            lvAracListesi.Size = new Size(582, 121);
+            lvAracListesi.TabIndex = 2;
+            lvAracListesi.UseCompatibleStateImageBehavior = false;
             // 
             // btnOlustur
             // 
@@ -72,6 +72,7 @@
             btnOlustur.TabIndex = 3;
             btnOlustur.Text = "Kirala";
             btnOlustur.UseVisualStyleBackColor = true;
+            btnOlustur.Click += btnOlustur_Click;
             // 
             // cmbGunSayisi
             // 
@@ -98,7 +99,7 @@
             Controls.Add(cmbAraclar);
             Controls.Add(cmbGunSayisi);
             Controls.Add(btnOlustur);
-            Controls.Add(listView1);
+            Controls.Add(lvAracListesi);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
@@ -113,7 +114,7 @@
 
         private Label label1;
         private Label label2;
-        private ListView listView1;
+        private ListView lvAracListesi;
         private Button btnOlustur;
         private ComboBox cmbGunSayisi;
         private ComboBox cmbAraclar;

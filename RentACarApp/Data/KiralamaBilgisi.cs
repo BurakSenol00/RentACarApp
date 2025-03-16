@@ -11,5 +11,10 @@ namespace RentACarApp.Data
         public int GunSayisi { get; set; }
         public Araba ToplamUcret { get; set; }
         public Araba Arac { get; set; }
+        public void UcretHesapla()
+        {
+            Arac.ToplamUcret = GunSayisi * Arac.GunlukUcret;
+        }
     }
+   
 }
