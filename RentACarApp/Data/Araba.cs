@@ -21,5 +21,9 @@ namespace RentACarApp.Data
         {
            
         }
+        public override string ToString()
+        {
+            return Marka + " " + Model + " " + Yil + " " + Renk + " " + GunlukUcret + " " + AracTipi ;
+        }
     }
 }
